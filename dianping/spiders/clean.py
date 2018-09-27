@@ -8,175 +8,51 @@ import webbrowser
 exit() """
 
 hz=[
-    "工",
-"贵",
-"健",
-"文",
-"学",
-"进",
-"红",
-"林",
-"宜",
-"市",
-"扬",
-"川",
-"温",
-"浙",
-"友",
-"春",
-"桂",
-"无",
-"滨",
-"尔",
-"义",
-"汉",
-"府",
-"治",
-"博",
-"肇",
-"湖",
-"锦",
-"体",
-"九",
-"汾",
-"遵",
-"衡",
-"化",
-"建",
-"庆",
+"锡",
+"潍",
+"幸",
+"县",
+"乡",
+"向",
+"佛",
+"冈",
+"祥",
+"清",
+"夏",
+"结",
+"谊",
+"保",
+"设",
+"辽",
 "中",
-"昌",
-"前",
-"凤",
-"公",
-"风",
-"青",
-"吉",
-"花",
-"坊",
-"生",
-"云",
-"河",
-"八",
-"人",
-"淮",
-"惠",
-"通",
-"旗",
-"胜",
-"波",
-"爱",
-"成",
-"津",
-"肥",
-"港",
-"绍",
-"苏",
-"重",
-"徐",
-"岛",
-"年",
-"济",
-"黄",
-"合",
-"育",
-"天",
-"和",
-"黑",
-"台",
-"庄",
-"烟",
-"关",
-"藏",
-"农",
-"沙",
-"蒙"
+"利",
+"皇",
+"开",
+"洛",
 ]
 
 dictaa = {
-'<span class=\"fa-QlAG\"></span>':u'工',
-'<span class=\"fa-0Ye1\"></span>':u'贵',
-'<span class=\"fa-vw9C\"></span>':u'健',
-'<span class=\"fa-akSw\"></span>':u'文',
-'<span class=\"fa-atkG\"></span>':u'学',
-'<span class=\"fa-UHI0\"></span>':u'进',
-'<span class=\"fa-X5v8\"></span>':u'红',
-'<span class=\"fa-rWXC\"></span>':u'林',
-'<span class=\"fa-HtQ6\"></span>':u'宜',
-'<span class=\"fa-DJLr\"></span>':u'市',
-'<span class=\"fa-qgi0\"></span>':u'扬',
-'<span class=\"fa-v5ae\"></span>':u'川',
-'<span class=\"fa-k6E0\"></span>':u'温',
-'<span class=\"fa-ow9z\"></span>':u'浙',
-'<span class=\"fa-CkGW\"></span>':u'友',
-'<span class=\"fa-BXP1\"></span>':u'春',
-'<span class=\"fa-A4Uv\"></span>':u'桂',
-'<span class=\"fa-C497\"></span>':u'无',
-'<span class=\"fa-1Zxs\"></span>':u'滨',
-'<span class=\"fa-P5JU\"></span>':u'尔',
-'<span class=\"fa-xZfp\"></span>':u'义',
-'<span class=\"fa-24iC\"></span>':u'汉',
-'<span class=\"fa-QIEU\"></span>':u'府',
-'<span class=\"fa-7SPt\"></span>':u'治',
-'<span class=\"fa-RKdi\"></span>':u'博',
-'<span class=\"fa-1THP\"></span>':u'肇',
-'<span class=\"fa-qmn2\"></span>':u'湖',
-'<span class=\"fa-auNX\"></span>':u'锦',
-'<span class=\"fa-uV9t\"></span>':u'体',
-'<span class=\"fa-jbS0\"></span>':u'九',
-'<span class=\"fa-hKg0\"></span>':u'汾',
-'<span class=\"fa-CNMl\"></span>':u'遵',
-'<span class=\"fa-Z6xm\"></span>':u'衡',
-'<span class=\"fa-TTdP\"></span>':u'化',
-'<span class=\"fa-I3Sz\"></span>':u'建',
-'<span class=\"fa-mJs6\"></span>':u'庆',
+'<span class=\"fa-A1C4\"></span>':u'锡',
+'<span class=\"fa-JQXE\"></span>':u'潍',
+'<span class=\"fa-evoK\"></span>':u'幸',
+'<span class=\"fa-IUb6\"></span>':u'县',
+'<span class=\"fa-650U\"></span>':u'乡',
+'<span class=\"fa-jHlv\"></span>':u'向',
+'<span class=\"fa-y2Px\"></span>':u'佛',
+'<span class=\"fa-B7A9\"></span>':u'冈',
+'<span class=\"fa-2qhc\"></span>':u'祥',
+'<span class=\"fa-KJRK\"></span>':u'清',
+'<span class=\"fa-WWqM\"></span>':u'夏',
+'<span class=\"fa-QB6X\"></span>':u'结',
+'<span class=\"fa-O3VJ\"></span>':u'谊',
+'<span class=\"fa-tgpv\"></span>':u'保',
+'<span class=\"fa-5GEc\"></span>':u'设',
+'<span class=\"fa-ZsjH\"></span>':u'辽',
 '<span class=\"fa-KuAn\"></span>':u'中',
-'<span class=\"fa-IYeY\"></span>':u'昌',
-'<span class=\"fa-vQi7\"></span>':u'前',
-'<span class=\"fa-OJdm\"></span>':u'凤',
-'<span class=\"fa-vZ5R\"></span>':u'公',
-'<span class=\"fa-JvRr\"></span>':u'风',
-'<span class=\"fa-5KhO\"></span>':u'青',
-'<span class=\"fa-QmOV\"></span>':u'吉',
-'<span class=\"fa-Y45h\"></span>':u'花',
-'<span class=\"fa-LPi8\"></span>':u'坊',
-'<span class=\"fa-OM3l\"></span>':u'生',
-'<span class=\"fa-hwaN\"></span>':u'云',
-'<span class=\"fa-vdG1\"></span>':u'河',
-'<span class=\"fa-qD7S\"></span>':u'八',
-'<span class=\"fa-DrPP\"></span>':u'人',
-'<span class=\"fa-Ca71\"></span>':u'淮',
-'<span class=\"fa-3gbK\"></span>':u'惠',
-'<span class=\"fa-LRnl\"></span>':u'通',
-'<span class=\"fa-RAiK\"></span>':u'旗',
-'<span class=\"fa-1miw\"></span>':u'胜',
-'<span class=\"fa-EF0j\"></span>':u'波',
-'<span class=\"fa-8Y9j\"></span>':u'爱',
-'<span class=\"fa-Penx\"></span>':u'成',
-'<span class=\"fa-6dIi\"></span>':u'津',
-'<span class=\"fa-ZUq1\"></span>':u'肥',
-'<span class=\"fa-TZWV\"></span>':u'港',
-'<span class=\"fa-rF1H\"></span>':u'绍',
-'<span class=\"fa-D9QB\"></span>':u'苏',
-'<span class=\"fa-FNWi\"></span>':u'重',
-'<span class=\"fa-iE2v\"></span>':u'徐',
-'<span class=\"fa-QoiS\"></span>':u'岛',
-'<span class=\"fa-s6Ou\"></span>':u'年',
-'<span class=\"fa-7SQx\"></span>':u'济',
-'<span class=\"fa-fdkT\"></span>':u'黄',
-'<span class=\"fa-q4sw\"></span>':u'合',
-'<span class=\"fa-56qX\"></span>':u'育',
-'<span class=\"fa-IUTi\"></span>':u'天',
-'<span class=\"fa-n8Xb\"></span>':u'和',
-'<span class=\"fa-YLIR\"></span>':u'黑',
-'<span class=\"fa-3TLD\"></span>':u'台',
-'<span class=\"fa-y9oU\"></span>':u'庄',
-'<span class=\"fa-fgcj\"></span>':u'烟',
-'<span class=\"fa-PftN\"></span>':u'关',
-'<span class=\"fa-nYRf\"></span>':u'藏',
-'<span class=\"fa-RblF\"></span>':u'农',
-'<span class=\"fa-vtnI\"></span>':u'沙',
-'<span class=\"fa-9NXi\"></span>':u'蒙'
+'<span class=\"fa-e2s4\"></span>':u'利',
+'<span class=\"fa-E0G9\"></span>':u'皇',
+'<span class=\"fa-Lfat\"></span>':u'开',
+'<span class=\"fa-NM88\"></span>':u'洛',
 }
 
 class cleanobj():
@@ -185,13 +61,15 @@ class cleanobj():
       conf = get_project_settings()
       self.conn= mysql.connector.connect(host=conf["MYSQL_HOST"],user=conf['MYSQL_USER'],password=conf['MYSQL_PWD'],database=conf['MYSQL_DB'],charset='utf8')
       self.cur = self.conn.cursor()
-      self.cur.execute("select shopId,address from shop")
+      self.cur.execute("select shopId,address,tel,star from shop limit 10000000")
       self.res = self.cur.fetchall()
+
       
       tag=[]
       for row in self.res:
-        tagls=re.findall(r'class=\"([a-zA-Z0-9-]{7})\"',row[1])
-        tag=tag+tagls
+        if row[1]:
+            tagls=re.findall(r'class=\"([a-zA-Z0-9-]{7})\"',row[1])
+            tag=tag+tagls
         #new_addr= re.sub(r'\<span class=\"([a-zA-Z0-9-]{7})\"\>\<\/span\>',th,row[1].encode("utf-8"))
         #cur.execute("update shop set address=%s where shopId=%s",(new_addr,row[0]))
       #exit()
@@ -221,13 +99,57 @@ class cleanobj():
             return dictvar[v].encode("utf-8")
 
       for row in self.res:
-         new_addr= re.sub(r'\<span class=\"([a-zA-Z0-9-]{7})\"\>\<\/span\>',th,row[1].encode("utf-8"))
-         #print new_addr
-         self.cur.execute("update shop set address=%s where shopId=%s",(new_addr,row[0]))
+          if row[1]:
+             new_addr= re.sub(r'\<span class=\"([a-zA-Z0-9-]{7})\"\>\<\/span\>',th,row[1].encode("utf-8"))
+             #print new_addr
+             self.cur.execute("update shop set address=%s where shopId=%s",(new_addr,row[0]))
+
+  def updateTel(self):
+      for row in self.res:
+          id=0
+          content=""
+          if row[2] and re.findall(u"无".encode("utf-8"),row[2].encode("utf-8")):
+              id = row[0]
+              
+          if row[2] and re.findall("<span class=\"item\" itemprop=\"tel\">",row[2]):
+              n1=row[2].replace("<span class=\"item\" itemprop=\"tel\">","")
+              n2=n1.replace("</span>",",")
+              id = row[0]
+              content = n2
+          if id :
+             self.cur.execute("update shop set tel=%s where shopId=%s",(content,id))
+
+  def updateStar(self):
+      starmap={
+          "mid-rank-stars mid-str0":"该商户暂无星级",
+          "mid-rank-stars mid-str50":"五星商户",
+          "mid-rank-stars mid-str45":"准五星商户",
+          "mid-rank-stars mid-str40":"四星商户",
+          "mid-rank-stars mid-str35":"准四星商户",
+          "mid-rank-stars mid-str30":"三星商户",
+          "mid-rank-stars mid-str25":"准三星商户",
+          "mid-rank-stars mid-str20":"二星商户",
+          "mid-rank-stars mid-str15":"准二星商户",
+          "mid-rank-stars mid-str10":"一星商户",
+          "mid-rank-stars mid-str05":"准一星商户",
+      }
+      for row in self.res:
+        if row[3]:
+          s=row[3].strip()
+          if s in starmap:
+              self.cur.execute("update shop set star=%s where shopId=%s",(starmap[s],row[0]))
+          
       
 
 if __name__=="__main__":
     obj = cleanobj()
+    #找出地址字段中有span标签并连接打印
     #obj.showtag()
+    #打印出字典格式
     #obj.printDict(hz)
-    obj.updateDb(dictaa)
+    #更新到数据库中
+    #obj.updateDb(dictaa)
+    #更正部分联系方式
+    #obj.updateTel()
+    #更正部分星级显示
+    #obj.updateStar()

@@ -193,6 +193,19 @@ dt={
 '<span class=\"fa-RblF\"></span>':u'农',
 '<span class=\"fa-vtnI\"></span>':u'沙',
 '<span class=\"fa-9NXi\"></span>':u'蒙',
+'<span class=\"fa-s67U\"></span>':u'肃',
+'<span class=\"fa-c7Sd\"></span>':u'迎',
+'<span class=\"fa-wk9q\"></span>':u'头',
+'<span class=\"fa-04AP\"></span>':u'教',
+'<span class=\"fa-NqTB\"></span>':u'曙',
+'<span class=\"fa-aRMf\"></span>':u'连',
+'<span class=\"fa-i65F\"></span>':u'汕',
+'<span class=\"fa-NNij\"></span>':u'机',
+'<span class=\"fa-z7tb\"></span>':u'鞍',
+'<span class=\"fa-YM25\"></span>':u'澳',
+'<span class=\"fa-iJ7K\"></span>':u'才',
+'<span class=\"fa-KuAn\"></span>':u'中',
+'<span class=\"fa-VjJz\"></span>':u'廊'
         }
 
 class shopsipder(scrapy.Spider):
@@ -206,8 +219,8 @@ class shopsipder(scrapy.Spider):
         settings=get_project_settings()
         conn=mysql.connector.connect(host=settings['MYSQL_HOST'],user=settings['MYSQL_USER'],password=settings['MYSQL_PWD'],database=settings['MYSQL_DB'],charset='utf8')
         cursor = conn.cursor()
-        #SELECT * FROM cat WHERE kindName='服装' and catId not in(102,128)
-        cursor.execute("SELECT * FROM cat WHERE kindName='免税店'")
+        #SELECT * FROM cat WHERE kindName='服装' and catId not in(43,60,59,39,25)
+        cursor.execute("SELECT * FROM cat WHERE kindName='轻奢'  ")
         res=cursor.fetchall()
         cursor.close()
         conn.close()
@@ -279,9 +292,40 @@ class shopsipder(scrapy.Spider):
            item['businessHours'] =self.trancate(els[1])
         else :
            log.msg("被ban啦哈哈")
-           exit('被ban,'+item['shopUrl'])
+           #exit('被ban,'+item['shopUrl'])
         yield item
         #print json.dumps(item,encoding="UTF-8",ensure_ascii=False)
+    
+    """专用于母婴购物行业的商店 
+    def parse_shop(self,response):
+        item=response.meta['item']
+        basic = response.xpath("//div[contains(@class,'shop-info-inner')]")
+        item['shopName'] = basic.xpath("//h1[@class='shop-title']/text()").extract_first()
+
+        item['catId'] = response.meta['para']['catId']
+
+        item['star'] = basic.xpath("//span[contains(@class,'item-rank-rst')]/@title").extract_first()
+     
+
+        item['other'] =""
+        
+
+        address=basic.xpath("//span[@itemprop='street-address']/text()").extract_first()
+        item['address'] = address
+        
+        item['tel'] = basic.xpath("//a[@id='J-showPhoneNumber']/@data-real").extract_first()
+
+
+        item['district'] = response.xpath("//div[@class='breadcrumb']/a[2]/text()").extract_first()
+        
+        if item['district'] and (not re.search(u"区".decode('utf-8'),item['district'],re.I)):
+             item['district'] = response.xpath("//div[@class='breadcrumb']/a[3]/text()").extract_first()
+        
+        item['businessHours'] = item['alias'] =""
+      
+           #exit('被ban,'+item['shopUrl'])
+        yield item
+        #print json.dumps(item,encoding="UTF-8",ensure_ascii=False) """
     
     def trancate(self,ls_var):
         """ res = []

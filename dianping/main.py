@@ -6,4 +6,4 @@ import sys
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-cmdline.execute("scrapy crawl dp".split())
+cmdline.execute("scrapy crawl shop".split())

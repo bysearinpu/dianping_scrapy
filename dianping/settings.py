@@ -67,7 +67,7 @@ DOWNLOADER_MIDDLEWARES = {
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   # 'dianping.pipelines.DianpingPipeline': 300,
+    'dianping.pipelines.ShopPipeline': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
